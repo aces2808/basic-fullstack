@@ -7,6 +7,34 @@
     <version>1.0.0-snapshot</version>
     <packaging>pom</packaging>
     <name>basic-fullstack</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <downloadSources>true</downloadSources>
+        <downloadJavadocs>false</downloadJavadocs>
+        <jdk.version>1.8</jdk.version>
+
+        <!-- Spring boot versions -->
+        <version.spring-boot>2.0.0.RELEASE</version.spring-boot>
+
+        <!-- Unit test dependencies -->
+        <version.org.testng>6.14.2</version.org.testng>
+
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <!-- Import dependency management from Spring Boot -->
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${version.spring-boot}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <modules>
         <module>fullstack-user-api</module>
     </modules>
