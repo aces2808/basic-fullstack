@@ -5,11 +5,12 @@ in AWS
 
 ## Getting Started
 
-Run `git clone https://github.com/aces2808/basic-fullstack.git` to have a full running project
+* Run `git clone https://github.com/aces2808/basic-fullstack.git` to have a full running project.
+* Run `mvn spring-boot:run -pl fullstack-user-api`
 
 ### Prerequisites
 
-* [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) - Primary Language
+* [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) - JDK Version
 * [Maven](https://maven.apache.org/download.cgi) - Dependency Management
 * [Node Js](https://nodejs.org/en/download) - JS Runtime
 
