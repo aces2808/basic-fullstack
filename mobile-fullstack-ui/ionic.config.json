@@ -1,0 +1,8 @@
+{
+  "name": "mobile-fullstack-ui",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
