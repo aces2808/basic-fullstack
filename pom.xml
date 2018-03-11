@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>ph.com.fullstack.sudocode</groupId>
     <artifactId>basic-fullstack</artifactId>
@@ -17,34 +18,78 @@
         <version.spring-boot>2.0.0.RELEASE</version.spring-boot>
 
         <!-- Unit test dependencies -->
-        <version.org.testng>6.14.2</version.org.testng>
+        <version.de.flapdoodle.embed.mongo>2.0.3</version.de.flapdoodle.embed.mongo>
+        <version.testng>6.14.2</version.testng>
+        <version.fullstack-domain>1.0.0-snapshot</version.fullstack-domain>
+        <version.fullstack-user-repository>1.0.0-snapshot</version.fullstack-user-repository>
 
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <!-- Import dependency management from Spring Boot -->
             <dependency>
-                <!-- Import dependency management from Spring Boot -->
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
                 <version>${version.spring-boot}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            <!-- Unit test framework -->
+            <dependency>
+                <groupId>org.testng</groupId>
+                <artifactId>testng</artifactId>
+                <version>${version.testng}</version>
+                <scope>test</scope>
+            </dependency>
+            <!-- Embedded mongo -->
+
+            <dependency>
+                <groupId>de.flapdoodle.embed</groupId>
+                <artifactId>de.flapdoodle.embed.mongo</artifactId>
+                <version>${version.de.flapdoodle.embed.mongo}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>cz.jirutka.spring</groupId>
+                <artifactId>embedmongo-spring</artifactId>
+                <version>RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>ph.com.fullstack.sudocode</groupId>
+                <artifactId>fullstack-domain</artifactId>
+                <version>${version.fullstack-domain}</version>
+            </dependency>
+            <dependency>
+                <groupId>ph.com.fullstack.sudocode</groupId>
+                <artifactId>fullstack-user-repository</artifactId>
+                <version>${version.fullstack-user-repository}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
     <dependencies>
         <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
     <modules>
         <module>fullstack-user-api</module>
-    <module>fullstack-domain</module>
-    <module>fullstack-user-service</module>
-    <module>fullstack-user-repository</module>
-  </modules>
+        <module>fullstack-domain</module>
+        <module>fullstack-user-service</module>
+        <module>fullstack-user-repository</module>
+    </modules>
 </project>
