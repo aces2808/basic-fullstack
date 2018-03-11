@@ -1,6 +1,6 @@
-package ph.com.fullstack.sudocode.model.user;
+package ph.com.fullstack.sudocode.user.model;
 
-import ph.com.fullstack.sudocode.model.base.Roles;
+import ph.com.fullstack.sudocode.base.model.Roles;
 
 public class User {
 

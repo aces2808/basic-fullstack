@@ -1,4 +1,4 @@
-package ph.com.fullstack.sudocode.model.base;
+package ph.com.fullstack.sudocode.base.model;
 
 public interface Model {
 
