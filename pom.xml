@@ -21,6 +21,7 @@
         <version.de.flapdoodle.embed.mongo>2.0.3</version.de.flapdoodle.embed.mongo>
         <version.testng>6.14.2</version.testng>
         <version.fullstack-domain>1.0.0-snapshot</version.fullstack-domain>
+        <version.fullstack-user-repository>1.0.0-snapshot</version.fullstack-user-repository>
 
     </properties>
 
@@ -55,11 +56,15 @@
                 <artifactId>embedmongo-spring</artifactId>
                 <version>RELEASE</version>
             </dependency>
-
             <dependency>
                 <groupId>ph.com.fullstack.sudocode</groupId>
                 <artifactId>fullstack-domain</artifactId>
                 <version>${version.fullstack-domain}</version>
+            </dependency>
+            <dependency>
+                <groupId>ph.com.fullstack.sudocode</groupId>
+                <artifactId>fullstack-user-repository</artifactId>
+                <version>${version.fullstack-user-repository}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
