@@ -18,8 +18,9 @@
         <version.spring-boot>2.0.0.RELEASE</version.spring-boot>
 
         <!-- Unit test dependencies -->
-        <version.de.flapdoodle.embed>2.0.3</version.de.flapdoodle.embed>
-        <version.org.testng>6.14.2</version.org.testng>
+        <version.de.flapdoodle.embed.mongo>2.0.3</version.de.flapdoodle.embed.mongo>
+        <version.testng>6.14.2</version.testng>
+        <version.fullstack-domain>1.0.0-snapshot</version.fullstack-domain>
 
     </properties>
 
@@ -38,7 +39,7 @@
             <dependency>
                 <groupId>org.testng</groupId>
                 <artifactId>testng</artifactId>
-                <version>${version.org.testng}</version>
+                <version>${version.testng}</version>
                 <scope>test</scope>
             </dependency>
             <!-- Embedded mongo -->
@@ -46,13 +47,19 @@
             <dependency>
                 <groupId>de.flapdoodle.embed</groupId>
                 <artifactId>de.flapdoodle.embed.mongo</artifactId>
-                <version>${version.de.flapdoodle.embed}</version>
+                <version>${version.de.flapdoodle.embed.mongo}</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>cz.jirutka.spring</groupId>
                 <artifactId>embedmongo-spring</artifactId>
                 <version>RELEASE</version>
+            </dependency>
+
+            <dependency>
+                <groupId>ph.com.fullstack.sudocode</groupId>
+                <artifactId>fullstack-domain</artifactId>
+                <version>${version.fullstack-domain}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
