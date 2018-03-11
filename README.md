@@ -28,7 +28,7 @@ Run the following commands to initialize the project: <br/>
 * `git clone https://github.com/aces2808/basic-fullstack.git`.
 * `cd basic-fullstack`
 * `mvn dependency:resolve`
-* `mvn spring-boot:run -pl fullstack-user-api`
+* `mvn clean install spring-boot:run -pl fullstack-user-api`
 * [Launch](http://localhost:8080) 
 
 ###### Web UI
