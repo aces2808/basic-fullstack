@@ -11,7 +11,7 @@
     <groupId>ph.com.fullstack.sudocode</groupId>
     <artifactId>fullstack-domain</artifactId>
     <version>1.0.0-snapshot</version>
-    <name>fullstack-domain</name>
+    <name>fullstack-domain [USER Domain Models]</name>
     <url>http://maven.apache.org</url>
     <dependencies>
         <dependency>

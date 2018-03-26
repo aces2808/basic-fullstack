@@ -11,7 +11,7 @@
     <groupId>ph.com.fullstack.sudocode</groupId>
     <artifactId>fullstack-user-service</artifactId>
     <version>1.0.0-snapshot</version>
-    <name>fullstack-user-service</name>
+    <name>fullstack-user-service [USER Services]</name>
     <url>http://maven.apache.org</url>
     <dependencies>
         <dependency>

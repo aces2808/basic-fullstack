@@ -11,7 +11,7 @@
     <groupId>ph.com.fullstack.sudocode</groupId>
     <artifactId>fullstack-user-api</artifactId>
     <version>1.0.0-snapshot</version>
-    <name>fullstack-user-api</name>
+    <name>fullstack-user-api [USER Api]</name>
     <url>http://maven.apache.org</url>
 
     <dependencies>

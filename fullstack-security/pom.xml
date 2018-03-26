@@ -11,7 +11,7 @@
     <groupId>ph.com.fullstack.sudocode</groupId>
     <artifactId>fullstack-security</artifactId>
     <version>1.0.0-snapshot</version>
-    <name>fullstack-security</name>
+    <name>fullstack-security [USER Security]</name>
     <url>http://maven.apache.org</url>
     <dependencies>
         <dependency>
