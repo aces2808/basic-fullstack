@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>ph.com.fullstack.sudocode</groupId>
     <artifactId>basic-fullstack</artifactId>
@@ -12,7 +11,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <downloadSources>true</downloadSources>
         <downloadJavadocs>false</downloadJavadocs>
-        <jdk.version>1.8</jdk.version>
+        <jdk.version>10</jdk.version>
 
         <!-- Spring boot versions -->
         <version.spring-boot>2.0.0.RELEASE</version.spring-boot>
@@ -20,6 +19,10 @@
         <!-- Unit test dependencies -->
         <version.de.flapdoodle.embed.mongo>2.0.3</version.de.flapdoodle.embed.mongo>
         <version.testng>6.14.2</version.testng>
+
+        <!-- AWS Versions -->
+        <version.aws-java-sdk-cognitoidentity>1.11.301</version.aws-java-sdk-cognitoidentity>
+
         <version.fullstack-domain>1.0.0-snapshot</version.fullstack-domain>
         <version.fullstack-user-repository>1.0.0-snapshot</version.fullstack-user-repository>
 
@@ -43,8 +46,8 @@
                 <version>${version.testng}</version>
                 <scope>test</scope>
             </dependency>
-            <!-- Embedded mongo -->
 
+            <!-- Embedded mongo -->
             <dependency>
                 <groupId>de.flapdoodle.embed</groupId>
                 <artifactId>de.flapdoodle.embed.mongo</artifactId>
@@ -56,6 +59,15 @@
                 <artifactId>embedmongo-spring</artifactId>
                 <version>RELEASE</version>
             </dependency>
+
+            <!-- AWS Cognito -->
+            <dependency>
+                <groupId>com.amazonaws</groupId>
+                <artifactId>aws-java-sdk-cognitoidentity</artifactId>
+                <version>${version.aws-java-sdk-cognitoidentity}</version>
+            </dependency>
+
+            <!-- Local dependencies -->
             <dependency>
                 <groupId>ph.com.fullstack.sudocode</groupId>
                 <artifactId>fullstack-domain</artifactId>
@@ -77,6 +89,10 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
@@ -91,5 +107,6 @@
         <module>fullstack-domain</module>
         <module>fullstack-user-service</module>
         <module>fullstack-user-repository</module>
-    </modules>
+    <module>fullstack-security</module>
+  </modules>
 </project>

@@ -21,7 +21,7 @@ A basic full-stack project to ramp up the learning curve of the following techno
 ## Getting Started
 
 Run the following commands to initialize the project: <br/>
-**Note:** The following commands assumes that everything is already setup.
+**Note:** The following commands assumes that everything is already setup.****
 
 ###### Spring boot Backend
 
