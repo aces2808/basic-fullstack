@@ -19,6 +19,10 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
         </dependency>
+        <dependency>
+            <groupId>ph.com.fullstack.sudocode</groupId>
+            <artifactId>fullstack-security</artifactId>
+        </dependency>
     </dependencies>
     <build>
         <finalName>${project.artifactId}-debug</finalName>
