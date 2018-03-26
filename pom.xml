@@ -26,6 +26,8 @@
 
         <version.fullstack-domain>1.0.0-snapshot</version.fullstack-domain>
         <version.fullstack-user-repository>1.0.0-snapshot</version.fullstack-user-repository>
+        <version.fullstack-security>1.0.0-snapshot</version.fullstack-security>
+
 
     </properties>
 
@@ -73,6 +75,11 @@
                 <groupId>ph.com.fullstack.sudocode</groupId>
                 <artifactId>fullstack-domain</artifactId>
                 <version>${version.fullstack-domain}</version>
+            </dependency>
+            <dependency>
+                <groupId>ph.com.fullstack.sudocode</groupId>
+                <artifactId>fullstack-security</artifactId>
+                <version>${version.fullstack-security}</version>
             </dependency>
             <dependency>
                 <groupId>ph.com.fullstack.sudocode</groupId>
