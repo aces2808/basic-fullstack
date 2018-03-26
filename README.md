@@ -12,7 +12,7 @@ A basic full-stack project to ramp up the learning curve of the following techno
 
 ### Prerequisites
 
-* [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) - JDK Version
+* [Java 10](http://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html) - JDK Version
 * [Maven](https://maven.apache.org/download.cgi) - Dependency Management
 * [Node Js](https://nodejs.org/en/download) - JS Runtime
 * [Angular CLI](https://angular.io/guide/quickstart) - Angular Installation
